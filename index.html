@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赤崁樓周邊：2-3小時吃喝玩樂精華攻略</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts 讓字體更好看 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-amber-50/40 text-slate-800 min-h-screen">
+
+    <!-- 頂部 Header -->
+    <header class="bg-rose-800 text-white py-8 px-4 text-center shadow-md">
+        <h1 class="text-2xl md:text-3xl font-bold tracking-wide">赤崁樓周邊：吃貨散策地圖</h1>
+        <p class="text-sm md:text-base text-rose-100 mt-2">台南在地美食精選 | 2-3小時慢活精華行程</p>
+    </header>
+
+    <!-- 主體內容區 -->
+    <main class="max-w-4xl mx-auto px-4 py-6">
+        
+        <!-- 快速導覽頁籤 (Tabs) -->
+        <div class="flex justify-center space-x-2 mb-6">
+            <button onclick="switchTab('food')" id="tab-food" class="px-6 py-2 rounded-full font-medium shadow-sm transition-all bg-rose-700 text-white">
+                🍽️ 精選美食
+            </button>
+            <button onclick="switchTab('spots')" id="tab-spots" class="px-6 py-2 rounded-full font-medium shadow-sm transition-all bg-white text-slate-600 hover:bg-slate-100">
+                🏮 漫遊景點
+            </button>
+        </div>
+
+        <!-- ================= 美食分頁 ================= -->
+        <section id="content-food" class="space-y-6 block">
+            <div class="border-l-4 border-rose-700 pl-3 mb-4">
+                <h2 class="text-xl font-bold text-rose-900">🌟 經典必吃名店</h2>
+            </div>
+            
+            <!-- 網格排版：電腦版2列，手機版1列 -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- 福泰飯桌 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-slate-800">福泰飯桌 第三代</h3>
+                            <span class="text-sm font-semibold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">約 $100-$150</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">📍 台南市中西區民族路二段219號</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">台南精緻的「飯桌仔」文化，肉燥飯配上現滾魚湯與各式小菜是必備。</p>
+                    </div>
+                    <div class="flex space-x-2 mt-4 text-xs">
+                        <a href="https://maps.app.goo.gl/uXv7d8i7iZ1H1K6t7" target="_blank" class="flex-1 text-center bg-slate-100 hover:bg-slate-200 text-slate-700 py-2 rounded font-medium transition">🗺️ Google 地圖</a>
+                        <a href="https://taiwanviptour.com/futai-tainan/" target="_blank" class="flex-1 text-center bg-rose-50 hover:bg-rose-100 text-rose-700 py-2 rounded font-medium transition">✍️ 部落客報導</a>
+                    </div>
+                </div>
+
+                <!-- 雙生綠豆沙 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-slate-800">雙生綠豆沙牛奶</h3>
+                            <span class="text-sm font-semibold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">約 $50-$65</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">📍 台南市中西區民族路二段281號</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">超高人氣排隊飲料，口感極度綿密。建議第一站就先去抽號碼牌。</p>
+                    </div>
+                    <div class="flex space-x-2 mt-4 text-xs">
+                        <a href="https://maps.app.goo.gl/9uT2Y6W9GzBAnp1Y6" target="_blank" class="flex-1 text-center bg-slate-100 hover:bg-slate-200 text-slate-700 py-2 rounded font-medium transition">🗺️ Google 地圖</a>
+                        <a href="https://mimitravel.tw/shuansheng/" target="_blank" class="flex-1 text-center bg-rose-50 hover:bg-rose-100 text-rose-700 py-2 rounded font-medium transition">✍️ 部落客報導</a>
+                    </div>
+                </div>
+
+                <!-- 義豐冬瓜茶 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-slate-800">義豐阿川冬瓜茶</h3>
+                            <span class="text-sm font-semibold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">約 $30-$50</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">📍 台南市中西區永福路二段216號</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">百年傳承的古早味，清熱消暑。推薦加粉條或檸檬增加口感。</p>
+                    </div>
+                    <div class="flex space-x-2 mt-4 text-xs">
+                        <a href="https://maps.app.goo.gl/5rK5n5Z6N4p26k5u8" target="_blank" class="flex-1 text-center bg-slate-100 hover:bg-slate-200 text-slate-700 py-2 rounded font-medium transition">🗺️ Google 地圖</a>
+                        <a href="https://supertaste.tvbs.com.tw/food/324512" target="_blank" class="flex-1 text-center bg-rose-50 hover:bg-rose-100 text-rose-700 py-2 rounded font-medium transition">✍️ 媒體報導</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-l-4 border-amber-600 pl-3 mt-8 mb-4">
+                <h2 class="text-xl font-bold text-amber-900">🔥 在地實力派加碼</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- 武廟肉圓 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-slate-800">武廟肉圓</h3>
+                            <span class="text-sm font-semibold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">約 $70 (3粒)</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">📍 台南市中西區永福路二段225號</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">清蒸派代表。外皮軟Q，肉餡札實，是下午茶點心的首選。</p>
+                    </div>
+                    <div class="flex space-x-2 mt-4 text-xs">
+                        <a href="https://maps.app.goo.gl/3w8Q6D7R5k6m7N4V9" target="_blank" class="flex-1 text-center bg-slate-100 hover:bg-slate-200 text-slate-700 py-2 rounded font-medium transition">🗺️ Google 地圖</a>
+                        <a href="https://www.tainanlohas.cc/2014/09/blog-post_25.html" target="_blank" class="flex-1 text-center bg-rose-50 hover:bg-rose-100 text-rose-700 py-2 rounded font-medium transition">✍️ 在地報導</a>
+                    </div>
+                </div>
+
+                <!-- 民族鍋燒老店 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-slate-800">民族鍋燒老店</h3>
+                            <span class="text-sm font-semibold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">約 $85-$100</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">📍 台南市中西區赤崁東街2號</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">台南鍋燒意麵的始祖，酥炸魚塊吸飽柴魚湯頭後風味一絕。</p>
+                    </div>
+                    <div class="flex space-x-2 mt-4 text-xs">
+                        <a href="https://maps.app.goo.gl/T8m6b5L4k2j7R5W1A" target="_blank" class="flex-1 text-center bg-slate-100 hover:bg-slate-200 text-slate-700 py-2 rounded font-medium transition">🗺️ Google 地圖</a>
+                        <a href="https://travel.yam.com/article/106452" target="_blank" class="flex-1 text-center bg-rose-50 hover:bg-rose-100 text-rose-700 py-2 rounded font-medium transition">✍️ 精選食記</a>
+                    </div>
+                </div>
+
+                <!-- 落成米糕 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-slate-800">落成米糕</h3>
+                            <span class="text-sm font-semibold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">約 $50-$90</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">📍 台南市中西區民族路二段241號</p>
+                        <p class="text-sm text-slate-600 mt-3 leading-relaxed">米粒分明且Q彈，淋上靈魂肉燥與魚鬆，吃巧也吃飽。</p>
+                    </div>
+                    <div class="flex space-x-2 mt-4 text-xs">
+                        <a href="https://maps.app.goo.gl/W5e4r3K2v7n8M9Z6A" target="_blank" class="flex-1 text-center bg-slate-100 hover:bg-slate-200 text-slate-700 py-2 rounded font-medium transition">🗺️ Google 地圖</a>
+                        <a href="https://kokoha.tw/luocheng-migao/" target="_blank" class="flex-1 text-center bg-rose-50 hover:bg-rose-100 text-rose-700 py-2 rounded font-medium transition">✍️ 部落客報導</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 景點與路線分頁 ================= -->
+        <section id="content-spots" class="space-y-6 hidden">
+            <div class="border-l-4 border-emerald-700 pl-3 mb-4">
+                <h2 class="text-xl font-bold text-emerald-900">🏮 必逛熱點與人文老街</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- 赤崁樓 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex flex-col md:flex-row md:items-center justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-800">赤崁樓 <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded ml-2">門票 $70</span></h3>
+                        <p class="text-sm text-slate-600 mt-2">國定古蹟，見證台南400年歷史。晚上的點燈氛圍與白天截然不同。</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/N5r6k7M4j2n8B9Z1A" target="_blank" class="mt-4 md:mt-0 text-center bg-emerald-50 hover:bg-emerald-100 text-emerald-700 px-4 py-2 rounded text-xs font-medium transition">🗺️ 地圖導航</a>
+                </div>
+
+                <!-- 祀典武廟 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex flex-col md:flex-row md:items-center justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-800">祀典武廟 <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded ml-2">免費參觀</span></h3>
+                        <p class="text-sm text-slate-600 mt-2">擁有全台最美紅牆之一。除了看建築，這裡的月老也是全台知名，專解單身疑難雜症。</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/8v4m3K2J7n6R5W9A8" target="_blank" class="mt-4 md:mt-0 text-center bg-emerald-50 hover:bg-emerald-100 text-emerald-700 px-4 py-2 rounded text-xs font-medium transition">🗺️ 地圖導航</a>
+                </div>
+
+                <!-- 新美街 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex flex-col md:flex-row md:items-center justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-800">新美街 (米街) <span class="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded ml-2">自由漫步</span></h3>
+                        <p class="text-sm text-slate-600 mt-2">隱身在大馬路旁的安靜老街，充滿文青手作選物店、老屋與特色彩繪牆。</p>
+                    </div>
+                    <a href="https://maps.app.goo.gl/V5e4r3K2v7n8M9Z6A" target="_blank" class="mt-4 md:mt-0 text-center bg-emerald-50 hover:bg-emerald-100 text-emerald-700 px-4 py-2 rounded text-xs font-medium transition">🗺️ 地圖導航</a>
+                </div>
+            </div>
+
+            <!-- 路線規劃區塊 -->
+            <div class="mt-8 bg-amber-100/60 border border-dashed border-amber-500 rounded-2xl p-6">
+                <h3 class="text-lg font-bold text-amber-900 mb-4 flex items-center">🧭 黃金 3 小時順路大補帖</h3>
+                <div class="space-y-4 text-sm text-slate-700">
+                    <div class="flex">
+                        <span class="font-bold text-amber-700 w-24 shrink-0">0 - 60 min</span>
+                        <p>抵達赤崁商圈。建議先衝去<b>雙生綠豆沙</b>抽號碼牌，隨後直接步行到<b>福泰飯桌</b>或<b>落成米糕</b>享用府城正餐。</p>
+                    </div>
+                    <div class="flex">
+                        <span class="font-bold text-amber-700 w-24 shrink-0">60 - 120 min</span>
+                        <p>走回大馬路領取綠豆沙（若排太長則換買<b>義豐冬瓜茶</b>）。買好飲料後買票進入<b>赤崁樓</b>園區，邊喝邊欣賞古蹟古書院。</p>
+                    </div>
+                    <div class="flex">
+                        <span class="font-bold text-amber-700 w-24 shrink-0">120 - 180 min</span>
+                        <p>過馬路到<b>祀典武廟</b>參觀或拜月老。嘴饞可以補一盤<b>武廟肉圓</b>，最後繞進<b>新美街</b>逛逛特色文青小店，輕鬆收尾！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="text-center py-8 text-xs text-slate-400 mt-12 border-t border-slate-200">
+        <p>※ 商家營業時間與實際價格請以現場公告為準。</p>
+        <p class="mt-1">祝你在台南擁有一段美好又飽足的悠閒時光！✨</p>
+    </footer>
+
+    <!-- Tab 切換的極簡 JavaScript -->
+    <script>
+        function switchTab(tab) {
+            const foodBtn = document.getElementById('tab-food');
+            const spotsBtn = document.getElementById('tab-spots');
+            const foodContent = document.getElementById('content-food');
+            const spotsContent = document.getElementById('content-spots');
+
+            if (tab === 'food') {
+                // 顯示美食
+                foodContent.classList.remove('hidden');
+                foodContent.classList.add('block');
+                spotsContent.classList.remove('block');
+                spotsContent.classList.add('hidden');
+                // 樣式切換
+                foodBtn.className = "px-6 py-2 rounded-full font-medium shadow-sm transition-all bg-rose-700 text-white";
+                spotsBtn.className = "px-6 py-2 rounded-full font-medium shadow-sm transition-all bg-white text-slate-600 hover:bg-slate-100";
+            } else {
+                // 顯示景點
+                spotsContent.classList.remove('hidden');
+                spotsContent.classList.add('block');
+                foodContent.classList.remove('block');
+                foodContent.classList.add('hidden');
+                // 樣式切換
+                spotsBtn.className = "px-6 py-2 rounded-full font-medium shadow-sm transition-all bg-emerald-700 text-white";
+                foodBtn.className = "px-6 py-2 rounded-full font-medium shadow-sm transition-all bg-white text-slate-600 hover:bg-slate-100";
+            }
+        }
+    </script>
+</body>
+</html>
